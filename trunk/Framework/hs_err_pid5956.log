@@ -1,0 +1,106 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+# java.lang.OutOfMemoryError: requested 2162688 bytes for offset table expansion. Out of swap space?
+#
+#  Internal Error (blockOffsetTable.cpp:73), pid=5956, tid=4156
+#  Error: offset table expansion
+#
+# JRE version: 6.0_23-b05
+# Java VM: Java HotSpot(TM) Client VM (19.0-b09 mixed mode windows-x86 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x005d9400):  JavaThread "Unknown thread" [_thread_in_vm, id=4156, stack(0x00370000,0x003c0000)]
+
+Stack: [0x00370000,0x003c0000],  sp=0x003bfb98,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x200a27]
+V  [jvm.dll+0xa53fc]
+V  [jvm.dll+0x1e701]
+V  [jvm.dll+0x1ec82]
+V  [jvm.dll+0xd1917]
+V  [jvm.dll+0x8573b]
+V  [jvm.dll+0x1e4ad6]
+V  [jvm.dll+0xd20c5]
+V  [jvm.dll+0xccb0d]
+V  [jvm.dll+0x1ef008]
+V  [jvm.dll+0xdbcff]
+V  [jvm.dll+0x1e9c28]
+V  [jvm.dll+0x106190]
+C  [java.exe+0x1657]
+C  [java.exe+0x1e2c]
+C  [java.exe+0x85b4]
+C  [kernel32.dll+0x51194]
+C  [ntdll.dll+0x5b495]
+C  [ntdll.dll+0x5b468]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x005d9400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=4156, stack(0x00370000,0x003c0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Program Files\Java\jdk1.6.0_23\bin\java.exe
+0x77aa0000 - 0x77bdc000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76230000 - 0x76304000 	C:\Windows\system32\kernel32.dll
+0x75d80000 - 0x75dca000 	C:\Windows\system32\KERNELBASE.dll
+0x76190000 - 0x76230000 	C:\Windows\system32\ADVAPI32.dll
+0x76b40000 - 0x76bec000 	C:\Windows\system32\msvcrt.dll
+0x77c50000 - 0x77c69000 	C:\Windows\SYSTEM32\sechost.dll
+0x76780000 - 0x76821000 	C:\Windows\system32\RPCRT4.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jdk1.6.0_23\jre\bin\msvcr71.dll
+0x6d8a0000 - 0x6db4c000 	C:\Program Files\Java\jdk1.6.0_23\jre\bin\client\jvm.dll
+0x76640000 - 0x76709000 	C:\Windows\system32\USER32.dll
+0x769d0000 - 0x76a1e000 	C:\Windows\system32\GDI32.dll
+0x75ef0000 - 0x75efa000 	C:\Windows\system32\LPK.dll
+0x76a20000 - 0x76abd000 	C:\Windows\system32\USP10.dll
+0x737d0000 - 0x73802000 	C:\Windows\system32\WINMM.dll
+0x76620000 - 0x7663f000 	C:\Windows\system32\IMM32.DLL
+0x779d0000 - 0x77a9c000 	C:\Windows\system32\MSCTF.dll
+0x75b20000 - 0x75b6b000 	C:\Windows\system32\apphelp.dll
+0x6d850000 - 0x6d85c000 	C:\Program Files\Java\jdk1.6.0_23\jre\bin\verify.dll
+0x6d3d0000 - 0x6d3ef000 	C:\Program Files\Java\jdk1.6.0_23\jre\bin\java.dll
+0x6d330000 - 0x6d338000 	C:\Program Files\Java\jdk1.6.0_23\jre\bin\hpi.dll
+0x77bf0000 - 0x77bf5000 	C:\Windows\system32\PSAPI.DLL
+0x6d420000 - 0x6d449000 	C:\Program Files\Java\jdk1.6.0_23\jre\bin\jdwp.dll
+0x6d740000 - 0x6d746000 	C:\Program Files\Java\jdk1.6.0_23\jre\bin\npt.dll
+0x6d890000 - 0x6d89f000 	C:\Program Files\Java\jdk1.6.0_23\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Xdebug -Xrunjdwp:transport=dt_shmem,address=javadebug -Dfile.encoding=UTF-8 -Xms1536m 
+java_command: cars.data.PiMath
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MiKTeX 2.9\miktex\bin\;C:\Program Files\TortoiseSVN\bin
+USERNAME=Hiep
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 14 Stepping 12, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7600 
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 14 stepping 12, cmov, cx8, fxsr, mmx, sse, sse2, sse3
+
+Memory: 4k page, physical 2087096k(450716k free), swap 4788100k(620520k free)
+
+vm_info: Java HotSpot(TM) Client VM (19.0-b09) for windows-x86 JRE (1.6.0_23-b05), built on Nov 12 2010 15:00:43 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Thu Apr 11 15:05:21 2013
+elapsed time: 0 seconds
+
